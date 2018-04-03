@@ -48,6 +48,6 @@ Then install the client:
 
 I then used ipa-getcert using 
 
-`sudo ipa-getcert request -f /etc/pki/tls/certs/localhost.crt -K HTTP/`hostname` -N CN=`hostname`,O=KEYCLOAK.TEST -g 2048 -k /etc/pki/tls/private/localhost.key -r`
+`sudo ipa-getcert request -f /etc/pki/tls/certs/localhost.crt -K HTTP/$( hostname ) -N CN=$( hostname ),O=KEYCLOAK.TEST -g 2048 -k /etc/pki/tls/private/localhost.key -r`
 
 Get rid of the extra `'s on the hostnames. Then restart httpd
