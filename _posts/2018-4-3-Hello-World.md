@@ -14,7 +14,7 @@ The first thing to do is:
 
 retrieve the example application for testing using curl:
 
-`curl -Lo /var/www/app.cgi 'http://fedorapeople.org/cgit/adelton/public_git/CGI-sessions.git/plain/app.cgi?id=start'`
+<span style="background-color: #DCDCDC">curl -Lo /var/www/app.cgi 'http://fedorapeople.org/cgit/adelton/public_git/CGI-sessions.git/plain/app.cgi?id=start'</span>
 
 Make sure it is executable as a CGI script:
 
