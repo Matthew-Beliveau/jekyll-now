@@ -10,11 +10,11 @@ Using [this](https://www.freeipa.org/page/Web_App_Authentication/Example_setup) 
 # Making the Apache App
 The first thing to do is:
 
-<span style="background-color: #DCDCDC">sudo yum install httpd perl-CGI -y</span>
+<span style="background-color: #DCDCDC">`sudo yum install httpd perl-CGI -y`</span>
 
 retrieve the example application for testing using curl:
 
-<span style="background-color: #DCDCDC">curl -Lo /var/www/app.cgi 'http://fedorapeople.org/cgit/adelton/public_git/CGI-sessions.git/plain/app.cgi?id=start'</span>
+<span style="background-color: #DCDCDC">`curl -Lo /var/www/app.cgi 'http://fedorapeople.org/cgit/adelton/public_git/CGI-sessions.git/plain/app.cgi?id=start'`</span>
 
 Make sure it is executable as a CGI script:
 
