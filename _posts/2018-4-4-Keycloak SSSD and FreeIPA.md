@@ -3,14 +3,14 @@ layout: post
 title: Keycloak SSSD and FreeIPA 
 ---
 
-# What is SSSD?
+## What is SSSD?
 
 The Systems Security Services Daemon(SSSD) is a plugin that provides acces to multiple identity and authentication providers. 
 Authentication through SSSD will allow LDAP, NIS and freeIPA services to use an offline mode. 
 
 For more reading check [the Fedora documentation](https://fedoraproject.org/wiki/Features/SSSD)
 
-# How does this help with Keycloak?
+## How does this help with Keycloak?
 SSSD integrates with the FreeIPA identity management(idM) server, providing authentication and access control. For Keycloak, we benefit from this integration
 authenticating against Pluggable Authentication Modules(PAM) and retrieving user data from SSSD. 
 
@@ -18,7 +18,7 @@ Most of the comminication between Keycloak and SSSD occurs through read-only D-B
 update users is through the FreeIPA interface. ( However, I am currently working on a solution to be able to write users to the idM server.). So, by default, 
 SSSD is only set up to import user information, not write it. 
 
-# How to set up SSSD and D-Bus
+## How to set up SSSD and D-Bus
 
 This part assume you have an idM server and a Keycloak server working correctly(will provide a tutorial for this at a later date). 
 
@@ -38,7 +38,7 @@ Then you need to enable to the SSSD Federation Provider:
 
 Then you need to restart both Keycloak and SSSD.
 
-# Configuring the Federated SSSD Store
+## Configuring the Federated SSSD Store
 
 After installing SSSD and D-Bus you need to configure the store. To configure your store you need to :
 1. Navigate to the Admin Console
