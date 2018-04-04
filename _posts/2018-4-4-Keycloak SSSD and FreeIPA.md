@@ -34,7 +34,7 @@ Then you need to enable to the SSSD Federation Provider:
 
 <span style="background-color: #DCDCDC">`sudo yum install jna`</span>
 
-<span style="background-color: #DCDCDC">`sudo yum install https://github.com/keycloak/libunix-dbus-java/releases/download/libunix-dbus-java-0.8.0/libunix-dbus-java-0.8.0-1.fc24.x86_64.rpm</span>
+<span style="background-color: #DCDCDC">`sudo yum install https://github.com/keycloak/libunix-dbus-java/releases/download/libunix-dbus-java-0.8.0/libunix-dbus-java-0.8.0-1.fc24.x86_64.rpm`</span>
 
 Then you need to restart both Keycloak and SSSD.
 
