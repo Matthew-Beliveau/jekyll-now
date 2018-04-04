@@ -17,6 +17,7 @@ retrieve the example application for testing using curl:
 <span style="background-color: #DCDCDC">`curl -Lo /var/www/app.cgi 'http://fedorapeople.org/cgit/adelton/public_git/CGI-sessions.git/plain/app.cgi?id=start'`</span>
 
 Make sure it is executable as a CGI script:
+
 <span style="background-color: #DCDCDC">`sudo chmod a+x /var/www/app.cgi`</span>
 
 <span style="background-color: #DCDCDC">`sudo yum install /usr/sbin/semanage -y`</span>
@@ -28,6 +29,7 @@ Make sure it is executable as a CGI script:
 Next go into the the ScriptAlaias Directive in /etc/httpd/conf/httpd.conf and add the line:
 
 <span style="background-color: #DCDCDC">`ScriptAlias /application /var/www/app.cgi`</span>
+
 Then restart httpd 
 
 To test on the command line use:
