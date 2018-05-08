@@ -47,6 +47,7 @@ Then paste this:
 export M2_HOME=/usr/local/src/apache-maven
 export PATH=${M2_HOME}/bin:${PATH}
 ```
+
 Now you have to make maven.sh executable then source the file:
 
 `sudo chmod +x maven.sh`
