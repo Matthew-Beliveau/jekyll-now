@@ -10,7 +10,7 @@ Sometimes I have trouble with using:
 and it wouldn't either install correctly or install the wrong version of Maven. I usally only have this problem on my VMs that run CentOS.
 So I am going to keep a recording of how I install Maven here for me in the future when I inevitably forget.
 
-# Making sure Java is installed correctly 
+## Making sure Java is installed correctly 
 
 I like to _really_ make sure Java is installed correctly. What this means is I install everything Java jdk related for my purposes.
 
@@ -32,7 +32,7 @@ Then run `echo $JAVA_HOME` to make sure the that it worked.
 
 Boom,  there you go. Java should be installed correctly.
 
-# Installing Maven 
+## Installing Maven 
 
 Go to /etc/profile.d directory to create a new config file
 `cd /etc/profile.d`
