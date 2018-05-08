@@ -7,7 +7,7 @@ Sometimes I have trouble with using:
 
 `sudo yum install maven`
 
-and it wouldn't either install correctly or install the wrong version of Maven. I usally only have this problem on my VMs that run CentOS.
+and it would either install correctly or install the wrong version of Maven. I usually only have this problem on my VMs that run Centos.
 So I am going to keep a recording of how I install Maven here for me in the future when I inevitably forget.
 
 ## Making sure Java is installed correctly 
