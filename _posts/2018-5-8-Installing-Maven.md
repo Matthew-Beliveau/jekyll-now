@@ -41,18 +41,16 @@ Go to /etc/profile.d directory to create a new config file
 
 Then paste this:
 
-`# Apache Maven Environment Variables`
-
-`# MAVEN_HOME for Maven 1 - M2_HOME for Maven 2`
-
-`export M2_HOME=/usr/local/src/apache-maven`
-
-`export PATH=${M2_HOME}/bin:${PATH}`
-
+```Shell Session
+# Apache Maven Environment Variables
+# MAVEN_HOME for Maven 1 - M2_HOME for Maven 2
+export M2_HOME=/usr/local/src/apache-maven
+export PATH=${M2_HOME}/bin:${PATH}
+```
 Now you have to make maven.sh executable then source the file:
 
 `sudo chmod +x maven.sh`
 
-`. /etc/profile.d/maven.sh'
+`. /etc/profile.d/maven.sh`
 
 Test that it is running correctly by running `mvn -version` 
