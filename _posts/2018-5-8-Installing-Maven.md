@@ -42,8 +42,8 @@ Go to /etc/profile.d directory to create a new config file
 Then paste this:
 
 ```Shell
-`# Apache Maven Environment Variables`
-`# MAVEN_HOME for Maven 1 - M2_HOME for Maven 2`
+# Apache Maven Environment Variables
+# MAVEN_HOME for Maven 1 - M2_HOME for Maven 2
 export M2_HOME=/usr/local/src/apache-maven
 export PATH=${M2_HOME}/bin:${PATH}
 ```
