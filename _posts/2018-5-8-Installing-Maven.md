@@ -35,20 +35,24 @@ Boom,  there you go. Java should be installed correctly.
 # Installing Maven 
 
 Go to /etc/profile.d directory to create a new config file
-`cd /etc/profile.d
+`cd /etc/profile.d`
 
-sudo vim maven.sh`
+`sudo vim maven.sh`
 
 Then paste this:
 
-`# Apache Maven Environment Variables
-# MAVEN_HOME for Maven 1 - M2_HOME for Maven 2
-export M2_HOME=/usr/local/src/apache-maven
-export PATH=${M2_HOME}/bin:${PATH}`
+`# Apache Maven Environment Variables`
+
+`# MAVEN_HOME for Maven 1 - M2_HOME for Maven 2`
+
+`export M2_HOME=/usr/local/src/apache-maven`
+
+`export PATH=${M2_HOME}/bin:${PATH}`
 
 Now you have to make maven.sh executable then source the file:
 
-`sudo chmod +x maven.sh
-. /etc/profile.d/maven.sh'
+`sudo chmod +x maven.sh`
+
+`. /etc/profile.d/maven.sh'
 
 Test that it is running correctly by running `mvn -version` 
