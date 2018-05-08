@@ -34,6 +34,19 @@ Boom,  there you go. Java should be installed correctly.
 
 ## Installing Maven 
 
+Go to /usr/local/src and download Maven
+`cd /usr/local/src`
+
+`wget http://www-us.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.tar.gz`
+
+Extract the tar file
+
+`tar -xf apache-maven-3.5.2-bin.tar.gz`
+
+Then rename the directory
+
+`mv apache-maven-3.5.2/ apache-maven/`
+
 Go to /etc/profile.d directory to create a new config file
 `cd /etc/profile.d`
 
