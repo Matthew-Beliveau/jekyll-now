@@ -292,4 +292,4 @@ Again replace $IPA_ADDRESS with your own.
 ```
 If you are using the `sudo` command instead of being in root you're going to have to add each port individually, sorry. 
 
-Will put a link to the next part when it is up!
+[How to Setup Keycloak]({{ site.baseurl}}{% link _posts/2018-6-11-How-to-Setup-Keycloak.md %})
