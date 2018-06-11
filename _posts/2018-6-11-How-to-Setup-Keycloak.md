@@ -33,7 +33,13 @@ Complete!
 ### Install the Client
 
 ```shell
-[root@idp ~]$ ipa-client-install --fixed-primary --server ipa.keycloak.test --domain keycloak.test --principal admin --password PASSWORD --unattended
+[root@idp ~]$ ipa-client-install \
+> --fixed-primary \
+> --server ipa.keycloak.test \
+> --domain keycloak.test \
+> --principal admin \
+> --password PASSWORD \
+> --unattended
 WARNING: ntpd time&date synchronization service will not be configured as
 conflicting service (chronyd) is enabled
 Use --force-ntpd option to disable it and force configuration of ntpd
@@ -165,7 +171,8 @@ WantedBy=multi-user.target
 ## Create Admin User
 ```shell
 [root@idp ~]$ $KEYCLOAK_HOME/bin/add-user-keycloak.sh -r master -u admin -p PASSWORD
-Added 'admin' to '/usr/local/keycloak/keycloak-3.4.3.Final/standalone/configuration/keycloak-add-user.json', restart server to load user
+Added 'admin' to '/opt//keycloak/keycloak-3.4.3.Final/standalone/configuration/keycloak-add-user.json',
+restart server to load user
 ```
 
 ## Start Service
