@@ -42,6 +42,7 @@ Then you need to restart both Keycloak and SSSD.
 
 After installing SSSD and D-Bus you need to configure the store. To configure your store you need to :
 1. Navigate to the Admin Console
+2. Create a new realm and name it "test_realm"
 2. Select User Federation
 3. Add an SSSD provider
 
