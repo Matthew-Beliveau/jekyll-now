@@ -30,7 +30,7 @@ Everything in this series was used on Fedora 27 VMs with Keycloak 3.4.3.
 
 <https://www.keycloak.org/documentation.html>
 
-**Scott Poore's Blog** - I heavily used his tutorial on his blog post series when I first started to set up keycloak myself. I'd like to think what I'm doing is just a more updated version of his series, as his was used on Fedora 24 wth Keycloak 2.4.0 and I'm using Fedora 27 with Keycloak 3.4.3. Most of the differences will be in setting up SSL and HTTPS, but other than that most of this tutorial series will be the same as his. 
+**Scott Poore's Blog** - I heavily used his tutorial on his blog post series when I first started to set up keycloak myself. I'd like to think what I'm doing is just a more updated version of his series, as his was used on Fedora 24 wth Keycloak 2.4.0 and I'm using Fedora 27 with Keycloak 3.4.3. Most of the differences will be in setting up SSL and HTTPS, and having my SPs be an IPA Client, but other than that most of this tutorial series will be the same as his. 
 
 <https://spoore.wordpress.com/>
 
