@@ -286,10 +286,10 @@ Again replace {{$IPA_ADDRESS}} with your own.
 
 [root@ipa]# for port in 88 464 12; do
 > firewall-cmd --add-port $port/udp
-> don
+> done
 
 [root@ipa}# firewall-cmd --runtime-to-permanent
 ```
 If you are using the `sudo` command instead of being in root you're going to have to add each port individually, sorry. 
 
-[Link]({{How to Setup Keycloak}})
+Will put a link to the next part when it is up!
