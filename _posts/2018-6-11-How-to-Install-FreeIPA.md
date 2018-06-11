@@ -8,8 +8,8 @@ title: How to Install FreeIPA
 You want to set up your hostname so your IPA server knows domain name to use. We'll be using *ipa.keycloak.test*. You're alos going to want to put your host's IP address in */etc/hosts/* 
 
 ```shell
-[$USER@$HOSTNAME]# sudo hostnamectl set-hostname ipa.keycloak.test
-[$USER@ipa] sudo echo `$IP_ADDRESS ipa.keycloak.test' >> /etc/hosts
+[$USER@$HOSTNAME ~]$ sudo hostnamectl set-hostname ipa.keycloak.test
+[$USER@ipa ~]$ sudo echo `$IP_ADDRESS ipa.keycloak.test' >> /etc/hosts
 ```
 
 Where $IP_ADDRESS is your host's IP or the IP you want to use
@@ -19,7 +19,7 @@ Where $IP_ADDRESS is your host's IP or the IP you want to use
 The first step is to install the software.
 
 ```shell
-[root@ipa ~]# dnf -y install freeipa-server-dns
+[root@ipa ~]$ dnf -y install freeipa-server-dns
 Last metadata expiration check: 0:09:53 ago on Mon 11 Jun 2018 11:07:59 AM EDT.
 Package freeipa-server-dns-4.6.3-2.fc27.noarch is already installed, skipping.
 Dependencies resolved.
@@ -32,7 +32,7 @@ Complete!
 This minimal unattended instal requires you to define the name of the realm that will be used by Kerberos and for the IPA domain. Also, define the Directory Manager password and the admin password. Using --unattended is so we won tbe prompted for anymore information. We will setup the DNS afterwards.
 
 ```shell
-[root@ipa ~]# ipa-server-install --realm KEYCLOAK.TEST --ds-password PASSWORD --admin-password PASSWORD --unattended
+[root@ipa ~]$ ipa-server-install --realm KEYCLOAK.TEST --ds-password PASSWORD --admin-password PASSWORD --unattended
 The log file for this installation can be found in /var/log/ipaserver-install.log
 ==============================================================================
 This program will set up the FreeIPA Server.
@@ -52,7 +52,7 @@ The domain name has been determined based on the host name.
 
 The IPA Master Server will be configured with:
 Hostname:       ipa.keycloak.test
-IP address(es): {{$IP_ADDRESS}}
+IP address(es): $IP_ADDRESS
 Domain name:    keycloak.test
 Realm name:     KEYCLOAK.TEST
 
@@ -271,8 +271,8 @@ files is the Directory Manager password
 If we don't setup the DNS correctly it will be hard for our IPA clients to see our server. Technically we could've set up the DNS during the Server install but I feel this is easier to track. I add the extra nameserver to the resolv.conf so the server machine can connect to the internet so I can update and download new tools for the server later. 
 
 ```shell
-[root@ipa]# ipa-dns-install --ip-address=$IP_ADDRESS --no-forwaders
-[root@ipa]# echo 'nameserver 1.1.1.1' >> /etc/resolv.conf
+[root@ipa ~]$ ipa-dns-install --ip-address=$IP_ADDRESS --no-forwaders
+[root@ipa ~]$ echo 'nameserver 1.1.1.1' >> /etc/resolv.conf
 ```
 
 Again replace $IPA_ADDRESS with your own. 
@@ -280,15 +280,15 @@ Again replace $IPA_ADDRESS with your own.
 ## Open Firewall ports
 
 ```shell
-[root@ipa]# for port in 80 443 389 636 88 464; do
+[root@ipa ~]$ for port in 80 443 389 636 88 464; do
 > firwall-cmd --add-port $port/tcp
 > done
 
-[root@ipa]# for port in 88 464 12; do
+[root@ipa ~]$ for port in 88 464 12; do
 > firewall-cmd --add-port $port/udp
 > done
 
-[root@ipa}# firewall-cmd --runtime-to-permanent
+[root@ipa ~]$ firewall-cmd --runtime-to-permanent
 ```
 If you are using the `sudo` command instead of being in root you're going to have to add each port individually, sorry. 
 
