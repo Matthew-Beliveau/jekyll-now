@@ -9,7 +9,7 @@ You want to set up your hostname so your IPA server knows domain name to use. We
 
 ```shell
 [$USER@$HOSTNAME]# sudo hostnamectl set-hostname ipa.keycloak.test
-[$USER@ipa] sudo echo `{{$IP_ADDRESS}} ipa.keycloak.test' >> /etc/hosts
+[$USER@ipa] sudo echo `$IP_ADDRESS ipa.keycloak.test' >> /etc/hosts
 ```
 
 Where $IP_ADDRESS is your host's IP or the IP you want to use
@@ -271,11 +271,11 @@ files is the Directory Manager password
 If we don't setup the DNS correctly it will be hard for our IPA clients to see our server. Technically we could've set up the DNS during the Server install but I feel this is easier to track. I add the extra nameserver to the resolv.conf so the server machine can connect to the internet so I can update and download new tools for the server later. 
 
 ```shell
-[root@ipa]# ipa-dns-install --ip-address={{$IP_ADDRESS}} --no-forwaders
+[root@ipa]# ipa-dns-install --ip-address=$IP_ADDRESS --no-forwaders
 [root@ipa]# echo 'nameserver 1.1.1.1' >> /etc/resolv.conf
 ```
 
-Again replace {{$IPA_ADDRESS}} with your own. 
+Again replace $IPA_ADDRESS with your own. 
 
 ## Open Firewall ports
 
