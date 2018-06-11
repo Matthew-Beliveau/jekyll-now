@@ -11,7 +11,7 @@ The previous post is here:
 
 I have already explained how to set up the SSSD User Federation before in another blog post so I'll point to that here:
 
-[Keycloa, SSSD and FreeIPA]({{ site.baseurl}}{% link _posts/2018-4-4-Keycloak SSSD and FreeIPA.md %})
+[Keycloak, SSSD and FreeIPA]({{ site.baseurl}}{% link _posts/2018-4-4-Keycloak SSSD and FreeIPA.md %})
 
 ## Next
 
