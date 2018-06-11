@@ -9,7 +9,7 @@ This is the first post where I will be installing Keycloak using FreeIPa for Use
 
 **IPA** - FreeIPA Master Server. This is the server that provides user information. For more information:
 
-[Link]({{https://www.freeipa.org/page/Main_Page}})
+<https://www.freeipa.org/page/Main_Page>
 
 **IdP** - IdP stands for Identity Provider. It provides applications with identity information upon request. It also can aid with authentication. IdP can link other Identity Providers together to centrally link separate data sources for authentication. 
 
