@@ -21,6 +21,9 @@ This is the first post where I will be installing Keycloak using FreeIPa for Use
 
 Everything in this series was used on Fedora 27 VMs with Keycloak 3.4.3. 
 
+## Links to next posts
+1. {{ matthew-beliveau.github.io }}{% post_url 2018-6-11-How-to-Install-FreeIPA %}
+
 ## References 
 
 **Keycloak Documentation** 
@@ -30,3 +33,4 @@ Everything in this series was used on Fedora 27 VMs with Keycloak 3.4.3.
 **Scott Poore's Blog** - I heavily used his tutorial on his blog post series when I first started to set up keycloak myself. I'd like to think what I'm doing is just a more updated version of his series, as his was used on Fedora 24 wth Keycloak 2.4.0 and I'm using Fedora 27 with Keycloak 3.4.3.
 
 <https://spoore.wordpress.com/>
+
