@@ -32,7 +32,11 @@ Complete!
 This minimal unattended instal requires you to define the name of the realm that will be used by Kerberos and for the IPA domain. Also, define the Directory Manager password and the admin password. Using --unattended is so we won tbe prompted for anymore information. We will setup the DNS afterwards.
 
 ```shell
-[root@ipa ~]$ ipa-server-install --realm KEYCLOAK.TEST --ds-password PASSWORD --admin-password PASSWORD --unattended
+[root@ipa ~]$ ipa-server-install \
+> --realm KEYCLOAK.TEST \
+> --ds-password PASSWORD \
+> --admin-password PASSWORD \
+> --unattended
 The log file for this installation can be found in /var/log/ipaserver-install.log
 ==============================================================================
 This program will set up the FreeIPA Server.
