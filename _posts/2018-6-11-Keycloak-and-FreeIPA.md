@@ -9,6 +9,8 @@ This is the first post where I will be installing Keycloak using FreeIPa for Use
 
 **IPA** - FreeIPA Master Server. This is the server that provides user information. For more information:
 
+[https://www.freeipa.org/page/Main_Page]
+
 **IdP** - IdP stands for Identity Provider. It provides applications with identity information upon request. It also can aid with authentication. IdP can link other Identity Providers together to centrally link separate data sources for authentication. 
 
 **SP** - stands for Service Provider. It is an application that uses mod_auth_mellon or mod_auth_openidc to connect these applications to Keycloak. I will be using mod_auth_openidc
@@ -23,8 +25,8 @@ Everything in this series was used on Fedora 27 VMs with Keycloak 3.4.3.
 
 **Keycloak Documentation** 
 
-https://www.keycloak.org/documentation.html
+[https://www.keycloak.org/documentation.html]
 
 **Scott Poore's Blog** - I heavily used his tutorial on his blog post series when I first started to set up keycloak myself. I'd like to think what I'm doing is just a more updated version of his series, as his was used on Fedora 24 wth Keycloak 2.4.0 and I'm using Fedora 27 with Keycloak 3.4.3.
 
-https://spoore.wordpress.com/
+[https://spoore.wordpress.com/]
