@@ -7,7 +7,7 @@ title: How to Install FreeIPA
 
 The first step is to install the software.
 
-``` Shell
+```shell
 [root@ipa ~]# dnf -y install freeipa-server-dns
 Last metadata expiration check: 0:21:38 ago on Thu Dec 15 12:41:10 2016.
 Package freeipa-server-dns-4.3.2-2.fc24.noarch is already installed, skipping.
