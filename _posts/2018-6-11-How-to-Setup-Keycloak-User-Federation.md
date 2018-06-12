@@ -17,4 +17,4 @@ Just a small change. Instead of going to localhost:8080, go to https://ipa.keycl
 
 ## Next
 
-Will put up link when post is up.
+[How to Setup an OpenID-Connect SP]({{ site.baseurl}}{% link _posts/2018-6-12-How-to-Setup-an-OpenID-connect-SP.md %})
