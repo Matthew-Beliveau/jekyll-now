@@ -13,6 +13,8 @@ I have already explained how to set up the SSSD User Federation before in anothe
 
 [Keycloak, SSSD and FreeIPA]({{ site.baseurl}}{% link _posts/2018-4-4-Keycloak SSSD and FreeIPA.md %})
 
+Just a small change. Instead of going to localhost:8080, go to https://ipa.keycloak.test:8443/auth
+
 ## Next
 
 Will put up link when post is up.
