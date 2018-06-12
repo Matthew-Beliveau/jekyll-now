@@ -24,7 +24,7 @@ Everything in this series was used on Fedora 27 VMs with Keycloak 3.4.3.
 ## Links to next posts
 1. [How to Install FreeIPA]({{ site.baseurl }}{% link _posts/2018-6-11-How-to-Install-FreeIPA.md %})
 2. [How to Setup Keycloak]({{ site.baseurl}}{% link _posts/2018-6-11-How-to-Setup-Keycloak.md %})
-3. [How to Setup Keycloak User Federation]({{ site.baseurl}}{% link _posts/2018-5-11-How-to-Setup-Keycloak-User-Federation.md %})
+3. [How to Setup Keycloak User Federation]({{ site.baseurl}}{% link _posts/2018-6-11-How-to-Setup-Keycloak-User-Federation.md %})
 
 ## References 
 
