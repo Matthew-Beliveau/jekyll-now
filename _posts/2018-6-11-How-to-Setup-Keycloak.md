@@ -332,7 +332,7 @@ Now we need to add https-listener for our new realm and change the  "http-invoke
 
 Next will be connected Keycloak to IPA with the SSSD Federation Provider:
 
-[How to Setup Keycloak User Federation]({{ site.baseurl }}{% link _posts/2018-5-11-How-to-Setup-Keycloak-User-Federation.md %})
+[How to Setup Keycloak User Federation]({{ site.baseurl }}{% link _posts/2018-6-11-How-to-Setup-Keycloak-User-Federation.md %})
 
 Previous:
 
