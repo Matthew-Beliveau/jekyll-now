@@ -161,7 +161,7 @@ EnvironmentFile=-/etc/keycloak/keycloak.conf
 User=root
 LimitNOFILE=102642
 PIDFile=/var/run/keycloak/keycloak.pid
-ExecStart=/usr/local/keycloak/keycloak-3.4.3.Final/bin/launch.sh $KEYCLOAK_MODE $KEYCLOAK_CONFIG $KEYCLOAK_BIND
+ExecStart=/opt/keycloak/keycloak-3.4.3.Final/bin/launch.sh $KEYCLOAK_MODE $KEYCLOAK_CONFIG $KEYCLOAK_BIND
 StandardOutput=null
 
 [Install]
