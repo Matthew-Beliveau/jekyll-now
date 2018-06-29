@@ -20,11 +20,12 @@ The first thing we're going to have to do is inside the admin client of Keycloak
 http://sp1.keycloak.test/example_app/private/redirect_uri
 
 http://sp1.keycloak.test/example_app/logged_out.html
+
 2. Base URL:
 
 http://sp1.keycloak.test/example_app/private
 
-3  Web Origins:
+3.  Web Origins:
 
 htpp://sp1.keycloak.test/example_app/private/redirect_uri
 
