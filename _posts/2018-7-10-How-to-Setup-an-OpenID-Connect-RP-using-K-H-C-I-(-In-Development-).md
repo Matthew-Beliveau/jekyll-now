@@ -164,7 +164,17 @@ Then switch over to the OIDC-Integration Branch.
 There may be some erros with the repo and having the make a PYTHONPATH enviroment variable to have to run this. 
 
 ```shell
-[root@sp2 ~]$ ./bin/keycloak-httpd-client-install --app-name example_app --client-originate-method registration --keycloak-server-url https://idp2.keycloak.test:8443 --keycloak-admin-username admin --keycloak-realm test_realm --module-root example_app --https-port 8443 --protected-locations "/example_app/private" --module mod_auth_openidc --force
+[root@sp2 ~]$ ./bin/keycloak-httpd-client-install \
+> --app-name example_app \
+> --client-originate-method registration \
+> --keycloak-server-url https://idp2.keycloak.test:8443 \
+> --keycloak-admin-username admin \
+> --keycloak-realm test_realm \
+> --module-root example_app \
+> --https-port 8443 \
+> --protected-locations "/example_app/private" \
+> --module mod_auth_openidc \ 
+> --force
 enter admin password: 
 [Step  1] Connect to Keycloak Server
 [Step  2] Create Directories
