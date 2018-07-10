@@ -14,7 +14,7 @@ I made a post not to long ago about making an OIDC RP manaully. That post did no
 
 Remember change $IP_ADDRESS to your VM's
 
-## Enroll ass an IPA Client
+## Enroll as an IPA Client
 
 I do this because it makes it easier to connect to the Keycloak Machine and IPA server then having to copy over the trust IPA CA certificate.
 
