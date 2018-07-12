@@ -154,10 +154,15 @@ Then copy this into the file:
 This is gonna require that you have git on your computer and know how to switch over to my OIDC-Integration branch. Put this repo into whatever Directory you want.
 
 ```shell
-[root@sp1 ~]$ git clone https://github.com/Matthew-Beliveau/keycloak-httpd-client-install.git
+[root@sp2 ~]$ git clone https://github.com/Matthew-Beliveau/keycloak-httpd-client-install.git
 ```
 
 Then switch over to the OIDC-Integration Branch. 
+
+```shell
+[root@sp2 ~]$ git fetch
+[root@sp2 ~]$ git checkout OIDC-Integration
+```
 
 ## Run the Command 
 
