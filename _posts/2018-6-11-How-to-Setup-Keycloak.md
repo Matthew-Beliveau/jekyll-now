@@ -293,6 +293,14 @@ Trust this certificate? [no]: yes
 Certificate was added to keystore
 ```
 
+## Import Signed Keycloak Cert to Keystore
+
+```shell
+[root@idp configuration]$ keytool -import -keystore keycloak.jks -file keycloak.cert -alias keycloak.test
+Enter keystore password:
+Certificate reply was installed in keystore
+```
+
 ## Configure Keycloak to use HTTPS
 Now this version and newer versions of keycloak have a realm in the standalone.xml file called "application" and it will cause problems with our configuration. We're not going to get rid of it entirely but just change its name in some places to fit our needs. But first we need to add the "UndertowRealm" to the "security-realms" section of the file: 
 
